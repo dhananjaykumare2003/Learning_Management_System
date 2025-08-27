@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { userLoggedIn, userLoggedOut } from "../authSlice";
 import { LogOut } from "lucide-react";
 
-const USER_API = "http://localhost:3000/api/v1/user/";
+const USER_API = `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/`;
 
 export const authApi = createApi({
     reducerPath:"authApi",
