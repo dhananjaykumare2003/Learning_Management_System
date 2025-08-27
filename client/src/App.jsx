@@ -1,6 +1,5 @@
 import Login from "./pages/Login";
 import './App.css';
-import Navbar from "./components/navbar";
 import HeroSection from "./pages/student/HeroSection";
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
