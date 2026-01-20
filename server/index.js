@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
   "http://localhost:5173", // local dev
-  "https://learning-management-system-f81x.vercel.app/" // deployed frontend
+  "https://learning-management-system-f81x.vercel.app" // deployed frontend
 ];
 
 //middlewares
