@@ -8,7 +8,7 @@ export const generateToken = (res, user, message) => {
 
     return res
     .status(200)
-    .cookie("token", token, {httpOnly:true, maxAge:24*60*60*1000, sameSite:"strict"})
+    .cookie("token", token, {httpOnly:true, secure:true, maxAge:24*60*60*1000, sameSite:"none"})
     .json({
         success : true,
         message:message,
