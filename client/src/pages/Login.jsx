@@ -87,7 +87,8 @@ const Login = () => {
                             <CardHeader>
                                 <CardTitle>Signup</CardTitle>
                                 <CardDescription>
-                                    Create a new account and click signup when you're done.
+                                    Create an account to access as Student or use provided password and email for Instructor access.
+                                    
                                 </CardDescription>
                             </CardHeader>
                             <CardContent className="grid gap-6">
@@ -97,7 +98,7 @@ const Login = () => {
                                     name="name" 
                                     value={signupInput.name}
                                     type="text"
-                                    placeholder="Eg. kumare" 
+                                    placeholder="Eg. XYZ Kumar" 
                                     required 
                                     onChange={(e) => changeInputHandler(e,"signup")}
                                     />
@@ -108,7 +109,7 @@ const Login = () => {
                                     type="email" 
                                     name="email"
                                     value={signupInput.email} 
-                                    placeholder="Eg. kumare@gmail.com" 
+                                    placeholder="Eg. test@gmail.com" 
                                     onChange={(e) => changeInputHandler(e,"signup")}
                                     required />
                                 </div>
@@ -118,7 +119,7 @@ const Login = () => {
                                     type="password" 
                                     name="password" 
                                     value={signupInput.password}
-                                    placeholder="Eg. 123*" 
+                                    placeholder="Eg. test123*" 
                                     onChange={(e) => changeInputHandler(e,"signup")}
                                     required />
                                 </div>
@@ -137,7 +138,7 @@ const Login = () => {
                             <CardHeader>
                                 <CardTitle>Login</CardTitle>
                                 <CardDescription>
-                                    Login your password here. After signup, you'll be logged in.
+                                    To see all functionality access with Instructor Role. Demo Email and Password are provided. <br /> Use any to access as Student.
                                 </CardDescription>
                             </CardHeader>
                             <CardContent className="grid gap-6">
@@ -147,7 +148,7 @@ const Login = () => {
                                     type="email" 
                                     name="email" 
                                     value={loginInput.email}
-                                    placeholder="Eg. kumare@gmail.com" 
+                                    placeholder="Instructor Email : test@gmail.com" 
                                     onChange={(e) => changeInputHandler(e,"login")}
                                     required />
                                 </div>
@@ -157,7 +158,7 @@ const Login = () => {
                                     type="password" 
                                     name="password" 
                                     value={loginInput.password}
-                                    placeholder="Eg. 123*" 
+                                    placeholder="Instructor Password : test123*" 
                                     onChange={(e) => changeInputHandler(e,"login")}
                                     required />
                                 </div>
