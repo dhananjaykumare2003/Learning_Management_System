@@ -128,8 +128,8 @@ const CourseTab = () => {
                 </CardDescription>
             </div>
             <div className='space-x-2'>
-                <Button variant={"outline"} disabled={courseByIdData?.course.lectures.length === 0} onClick={()=>publishStatusHandler(courseByIdData?.course.isPublished ? "false" : "true")}>{courseByIdData?.course.isPublished ? "Unpublished" : "Published"}</Button>
-                <Button>Remove Course</Button>
+                <Button disabled={courseByIdData?.course.lectures.length === 0} onClick={()=>publishStatusHandler(courseByIdData?.course.isPublished ? "false" : "true")}>{courseByIdData?.course.isPublished ? "Unpublished" : "Published"}</Button>
+                
             </div>
         </CardHeader>
         <CardContent>
